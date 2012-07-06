@@ -74,6 +74,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Pull in some common exports.
+if [ -f ~/.bash_exports ]; then
+    . ~/.bash_exports
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"

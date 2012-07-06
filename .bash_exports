@@ -1,0 +1,7 @@
+# Exports
+# By defining exports here, they will be active regardless of how the term
+# instance is started. This is because .bashrc sources this file.
+
+# I like vim, you might like nano.
+EDITOR=vim
+export EDITOR
