@@ -1,0 +1,17 @@
+#!/bin/bash
+# Copy this file to welcome.sh and make sure it is executable
+#   chmod u+x welcome.sh
+# if you want to see a custom welcome message when you login.
+#
+# NOTE: This file can cause issues when logging in through ssh
+# using rsync.
+#
+
+
+## Welcome message ##
+echo -ne "Morning, boss. It's "; date '+%A, %B %-d %Y'
+uptime
+echo -e ""; cal
+echo -e "And now your moment of Zen:"; /usr/games/fortune
+
+
