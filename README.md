@@ -7,7 +7,7 @@ Install
 ---------------------------------------
 
 $ cd ~
-$ git clone https://github.com/jmcaffee/dotfiles.git
+$ git clone ssh://git@github.com/jmcaffee/dotfiles.git
 
 Run the install script:
 $ dotfiles/install_dotfiles.sh
