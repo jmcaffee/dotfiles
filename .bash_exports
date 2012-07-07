@@ -13,6 +13,10 @@
 #
 # See http://joshstaiger.org/archives/2005/07/bash_profile_vs.html
 
+# GLOBAL VARIABLES:
+# To set global export variables, add them to /etc/profile or add a script
+# to /etc/profile.d/ directory.
+# See http://www.linuxquestions.org/questions/linux-newbie-8/export-environment-variables-at-boot-up-708530/
 
 # I like vim, you might like nano.
 EDITOR=vim
