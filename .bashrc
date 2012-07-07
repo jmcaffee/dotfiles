@@ -103,6 +103,3 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/dotfiles/welcome.sh ]; then
-    . ~/dotfiles/welcome.sh
-fi

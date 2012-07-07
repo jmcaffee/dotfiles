@@ -20,11 +20,8 @@ fi
 
 # User specific environment and startup programs
 
-# set PATH so it inludes user's private bin if it exists
-if [ -d "$HOME/bin" ]; then
-	PATH="$HOME/bin:$PATH"
+# Display some welcome info if the file exists.
+if [ -f ~/dotfiles/welcome.sh ]; then
+    . ~/dotfiles/welcome.sh
 fi
-# PATH=$PATH:$HOME/bin
 
-export PATH
-unset USERNAME
