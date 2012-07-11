@@ -24,6 +24,11 @@ export EDITOR
 
 # Add user's private bin dir to PATH if it exists.
 if [ -d "$HOME/bin" ]; then
-    PATH="$HOME/bin:$PATH"
+    export PATH="$HOME/bin:$PATH"
 fi
-export PATH
+
+# Add the Links directory to the path 'cd' searches,
+# but only if this is an interactive terminal.
+if [ ! -z "$PS1" ]; then
+    export CDPATH=.:~:~/Links
+fi
