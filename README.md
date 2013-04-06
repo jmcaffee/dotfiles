@@ -29,6 +29,14 @@ files: `dotfile_backups`
 
 It also creates a directory to place your local .bash* files: `.bashrc.d`
 
+Files in this directory will be sourced when .bashrc is read.
+These files are sourced _AFTER_ the standard .bash* files so
+your settings can override anything set prior.
+
+Place any environment specific files in this directory.
+
+This is a good place to put files such as .git_aliases
+
 ## Welcome Message
 
 If you'd like to see a customized welcome message at login,

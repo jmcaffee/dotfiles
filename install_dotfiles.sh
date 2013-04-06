@@ -52,7 +52,7 @@ ln -s dotfiles/.bash_logout .bash_logout
 localbashfiles=.bashrc.d
 echo "Creating $localbashfiles dir."
 echo "Files in this directory will be sourced when .bashrc is read."
-echo "These files are sources AFTER the standard .bash* files so"
+echo "These files are sourced AFTER the standard .bash* files so"
 echo "your settings can override anything set prior."
 echo
 echo "Place any environment specific files in this directory."
