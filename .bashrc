@@ -1,3 +1,8 @@
+# If ~/.bash_rbenv exists, source it first.
+if [ -f ~/.bash_rbenv ]; then
+    . ~/.bash_rbenv
+fi
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -107,4 +112,14 @@ fi
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
+
+run_scripts()
+{
+	for script in $1/*; do
+		[ -x "$script" ] || continue
+		. $script
+	done
+}
+
+run_scripts $HOME/.bashrc.d
 

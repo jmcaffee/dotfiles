@@ -20,6 +20,17 @@ or do it yourself:
 	$ ln -s dotfiles/.bash_aliases .bash_aliases
 	$ ln -s dotfiles/.bash_logout .bash_logout
 
+#### Backups
+
+The install script creates a directory to backup your existing .bash*
+files: `dotfile_backups`
+
+#### Local .bash files
+
+It also creates a directory to place your local .bash* files: `.bashrc.d`
+
+## Welcome Message
+
 If you'd like to see a customized welcome message at login,
 copy the `welcome.example` script to `dotfiles/welcome.sh`:
 
@@ -29,3 +40,10 @@ Modify it to your liking.
 
 If `.bashrc` finds the `welcome.sh` script, it will run it after it
 has completed.
+
+## rbenv
+
+`.bashrc` looks in your $HOME directory for a `.bash_rbenv` file.
+It will source this file before anything else if it's found.
+
+I like to export my `RAILS_ENV` in this file.
