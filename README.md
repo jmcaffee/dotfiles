@@ -29,13 +29,20 @@ files: `dotfile_backups`
 
 It also creates a directory to place your local .bash* files: `.bashrc.d`
 
-Files in this directory will be sourced when .bashrc is read.
+Files in this directory will be sourced when `.bashrc` is read.
 These files are sourced _AFTER_ the standard .bash* files so
 your settings can override anything set prior.
 
 Place any environment specific files in this directory.
 
-This is a good place to put files such as .git_aliases
+This is a good place to put files such as `.git_aliases`
+
+## rbenv
+
+`.bashrc` looks in your `$HOME` directory for a `.bash_rbenv` file.
+It will source this file before anything else if it's found.
+
+I like to export my `RAILS_ENV` in this file.
 
 ## Welcome Message
 
@@ -49,9 +56,3 @@ Modify it to your liking.
 If `.bashrc` finds the `welcome.sh` script, it will run it after it
 has completed.
 
-## rbenv
-
-`.bashrc` looks in your $HOME directory for a `.bash_rbenv` file.
-It will source this file before anything else if it's found.
-
-I like to export my `RAILS_ENV` in this file.
