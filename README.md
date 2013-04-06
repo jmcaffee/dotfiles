@@ -9,17 +9,21 @@ My linux dot files.
 	$ git clone ssh://git@github.com/jmcaffee/dotfiles.git
 
 Run the install script:
+
 	$ dotfiles/install_dotfiles.sh
 
 or do it yourself:
-Make links to the pertinent files
+
+	# Make links to the pertinent files
 
 	$ ln -s dotfiles/.bashrc .bashrc
 	$ ln -s dotfiles/.bash_aliases .bash_aliases
 	$ ln -s dotfiles/.bash_logout .bash_logout
 
 If you'd like to see a customized welcome message at login,
-copy the `welcome.example` script to `dotfiles/welcome.sh`
+copy the `welcome.example` script to `dotfiles/welcome.sh`:
+
+	$ cp dotfiles/welcome.example dotfiles/welcome.sh
 
 Modify it to your liking.
 
